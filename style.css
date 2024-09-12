@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#data-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+#data-container div {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#data-container div:last-child {
+    border-bottom: none;
+}
+
+#pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#pagination-controls button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#pagination-controls button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#pagination-controls button.active {
+    background-color: #0056b3;
+    font-weight: bold;
+    border: 2px solid #004494;
+}
+
+#pagination-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pagination-controls span {
+    margin: 0 8px;
+    font-size: 16px;
+    color: #333;
+}
